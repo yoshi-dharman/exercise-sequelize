@@ -22,6 +22,15 @@ User.hasMany(Todo, {
       underscored: true,
       freezeTableName: true
     }
+});
+
+Todo.belongsTo(User, {
+    foreignKey: {
+      name: 'user_id',
+      allowNull: false,
+      underscored: true,
+      freezeTableName: true
+    }
 })
 
 module.exports = User;
