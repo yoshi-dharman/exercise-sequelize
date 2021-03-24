@@ -2,7 +2,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 const sequelize = require('../config/db');
 const Todo = require('./todo.model');
 
-const User = sequelize.define('user', {
+const User = sequelize.define('es_user', {
     name: {
         type: DataTypes.STRING,
         allowNull : false
