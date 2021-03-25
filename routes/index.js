@@ -26,6 +26,7 @@ router.get('/', (req, res) => {
     .then(result => {
         res.json({
             message: "todo app per user, .../todo or .../user",
+            how_to_use: "/:id,  /todo,  /todo/:id,  /user,  /user/:id",
             data: result
         })
     })
