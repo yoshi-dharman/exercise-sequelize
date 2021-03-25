@@ -13,7 +13,7 @@ module.exports = {
         const todos = await Todo.findOne({
             where: { id: req.params.id}
         });
-        if (users === null) {
+        if (todos === null) {
             res.json({
                 message: "not found",
             });
